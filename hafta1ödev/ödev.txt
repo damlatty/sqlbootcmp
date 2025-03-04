@@ -3,7 +3,7 @@ Merhaba, ben F.Damla Tatay. Burada 1.haftaki ödev için yazdığım sorgular ve
 Öncelikle, "veri.sql" dosyası çalışmadığı için, diğer bir seçenek olan "tablo oluşturma kodları"nı
 kullanarak tabloları oluşturduğumu belirtmek isterim.
 
-Tabloların fotoğraflarına githubdan da bakabilirsiniz.
+Tabloların fotoğraflarına da "tablovesorgu_foto" klasöründen bakabilirsiniz.
 
 a. Belirli Kolonları Seçme
 
