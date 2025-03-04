@@ -17,7 +17,11 @@ b. DISTINCT Komutu ile Tekrarları Önleme
 SELECT DISTINCT firstname, lastname, departmentid
 FROM employees
 
-SELECT DISTINCT sorgusu ile, tekrarları önleyerek, employees tablosundan, firstname, lastname, salary ve departmentid girdilerini seçtim. (veri.sql dosyasında nasıldı bilmiyorum ancak tablo oluşturma kodlarıyla hazırladığım tabloda zaten tekrar yoktu. Yine de istendiği için farazi yaptım, ancak burada yalnızca SELECT de aynı sonucu çıkarıyor.)
+SELECT DISTINCT sorgusu ile, tekrarları önleyerek, employees tablosundan, firstname, lastname, salary ve 
+departmentid girdilerini seçtim
+
+(veri.sql dosyasında nasıldı bilmiyorum ancak tablo oluşturma kodlarıyla hazırladığım tabloda zaten tekrar yoktu. 
+Yine de istendiği için farazi yaptım, ancak burada yalnızca SELECT de aynı sonucu çıkarıyor.)
 
 c. Belirli Bir Departmana Ait Çalışanları Listeleme
 
@@ -25,7 +29,10 @@ SELECT firstname, lastname, departmentid
 FROM employees
 WHERE departmentid = 1
 
-Bu kısımda benden sadece IT departmanında çalışanları listelemem istenmişti, employees tablosunda departman adı verisi olmadığı ve yalnızca departman id'si olduğu için öncelikle departmanlar tablosundan IT departman kodunun 1 olduğunu öğrendim. WHERE sorgusuyla sadece departman id'si 1 olan çalışanları seçtim. 
+Bu kısımda benden sadece IT departmanında çalışanları listelemem istenmişti, 
+employees tablosunda departman adı verisi olmadığı ve yalnızca departman id'si olduğu için öncelikle departmanlar 
+tablosundan IT departman kodunun 1 olduğunu öğrendim. 
+WHERE sorgusuyla sadece departman id'si 1 olan çalışanları seçtim. 
 
 d. Maaşa Göre Sıralama
 Çalışanları maaşlarına göre büyükten küçüğe sıralayan bir SQL sorgusu yazınız.
@@ -34,7 +41,8 @@ SELECT firstname, lastname, departmentid
 FROM employees
 ORDER BY salary DESC
 
-Sıralama için ORDER BY sorgusunu kullandım, salary verisini seçerek, DESC ile de büyükten küçüğe sıralamayı sağladım.
+Sıralama için ORDER BY sorgusunu kullandım, salary verisini seçerek, 
+DESC ile de büyükten küçüğe sıralamayı sağladım.
 
 e. Kolonları Birleştirme (Concatenation)
 Çalışanların FirstName ve LastName alanlarını birleştirerek, tam adlarını içeren yeni bir kolon
@@ -43,7 +51,8 @@ oluşturan bir SQL sorgusu yazınız.
 SELECT CONCAT(firstname, ' ', lastname) , salary , departmentid
 FROM employees
 
-CONCAT fonksiyonu ile firstname ve lastname kolonlarını merge ettim, araya bir de boşluk ' ' ekleyerek okunabilirliği sağladım.
+CONCAT fonksiyonu ile firstname ve lastname kolonlarını merge ettim, araya bir de boşluk ' ' ekleyerek 
+okunabilirliği sağladım.
 
 Eğitimler için teşekkürler. 
 
